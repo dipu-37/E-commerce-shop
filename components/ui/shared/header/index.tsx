@@ -4,6 +4,7 @@ import { APP_NAME } from "@/lib/constants";
 import { Button } from "../../button";
 import { ShoppingCart, UserIcon } from "lucide-react";
 import ModeToggle from "./mode-toggle";
+import Menu from "./menu";
 
 const Header = () => {
   return (
@@ -25,17 +26,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="space-x-2 flex-end">
-            <ModeToggle></ModeToggle>
-          <Button asChild variant="ghost">
-            <Link href={"/cart"}>
-              <ShoppingCart></ShoppingCart>Cart
-            </Link>
-          </Button>
-           <Button asChild >
-            <Link href={"/sign-in"}>
-              <UserIcon></UserIcon>Sign-In
-            </Link>
-          </Button>
+           <Menu></Menu>
         </div>
        
         
