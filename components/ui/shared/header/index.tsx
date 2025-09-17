@@ -3,6 +3,7 @@ import Link from "next/link";
 import { APP_NAME } from "@/lib/constants";
 import { Button } from "../../button";
 import { ShoppingCart, UserIcon } from "lucide-react";
+import ModeToggle from "./mode-toggle";
 
 const Header = () => {
   return (
@@ -24,6 +25,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="space-x-2 flex-end">
+            <ModeToggle></ModeToggle>
           <Button asChild variant="ghost">
             <Link href={"/cart"}>
               <ShoppingCart></ShoppingCart>Cart
