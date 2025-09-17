@@ -33,6 +33,7 @@ const ProductCard = ({ product }: { product:any }) => {
             <p className='text-destructive'>Out Of Stock</p>
           )}
         </div>
+        
       </CardContent>
     </Card>
   );
